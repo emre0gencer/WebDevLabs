@@ -1,0 +1,49 @@
+* {
+    font-family: Roboto, sans-serif;
+    padding: 5px;
+    margin: 5px;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: oblique;
+    font-variation-settings: "wght" 100, "slnt" -10;
+}
+#webname {
+    background-color: #92ad70;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0077CC;
+    margin-right: 15px; 
+}
+
+th {
+    padding: 12px 0;
+    background-color: #4CAF50; /* Table heading background color */
+    color: white; /* Table heading text color */
+    width: fit-content; /* Fit content width */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form * {
+    display: block; 
+    margin: 10px auto; 
+    text-align: center;
+}
+
+/* Button Styling - (Source: CHATGPT)*/
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    cursor: pointer; /* Cursor effect */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
