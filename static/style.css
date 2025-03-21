@@ -47,3 +47,32 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049; /* Darker green on hover */
 }
+
+#FavList {
+    display: none;
+ }
+ #SeeMoreBTN{
+    background-color: #92ad70;
+    border: 0px;
+    border-radius: 16px;
+    font-size:large;
+    transition: background-color 0.3s ease;
+ }
+
+ #shortIntro {
+    display: block;
+ }
+ 
+ #readLess, #longIntro {
+    display: none;
+ }
+ 
+ #readLess, #readMore {
+    font-style: italic;
+    background-color: #92ad70;
+ }
+ 
+ #ValidateMsg {
+    width: max-content;
+    margin: auto;
+ }

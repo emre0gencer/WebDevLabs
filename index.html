@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="./static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="font-family: Arial">
+<body onload="addYear()">
     <header style="color:blue; background:lightblue">
         <h1 id="webname">Emre Gencer</h1>
     </header>
@@ -29,7 +30,12 @@
     <div class="main">
         <h2 id = 'greeting'></h2>
         <img src="static/photoimage.png" alt="A photo of Emre.">
-        <p id="intro">Welcome to my website! I'm passionate about Information Systems and exploring the intersection of technology and creativity.</p>
+        <div>
+            <span id="shortIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <span id="readMore">read more ...</span>
+            <span id="longIntro"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <span id="readLess">read less</span>
+        </div>
     </div>
     <footer>
         &copy; 2025 Emre Gencer. All rights reserved.
