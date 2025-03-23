@@ -19,9 +19,16 @@ nav a {
 
 th {
     padding: 12px 0;
-    background-color: #4CAF50; /* Table heading background color */
-    color: white; /* Table heading text color */
-    width: fit-content; /* Fit content width */
+    background-color: #4CAF50; 
+    color: white; 
+    width: fit-content;
+    text-align: center;
+
+}
+
+.contactsTable {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 tr:nth-child(even) {
@@ -48,9 +55,9 @@ input[type="submit"]:hover {
     background-color: #45a049; /* Darker green on hover */
 }
 
-#FavList {
+/*#FavList {
     display: none;
- }
+ }*/
  #SeeMoreBTN{
     background-color: #92ad70;
     border: 0px;
@@ -76,3 +83,90 @@ input[type="submit"]:hover {
     width: max-content;
     margin: auto;
  }
+
+ .funIMG {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.advice {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.advice:hover {
+    background-color: #45a049;
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.item1, .item2, .item3, .item4,
+.contactInfo, .contactForm {
+    flex: 1 1 300px;  /* Flexible width with a minimum size */
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Image Styling */
+.funIMG {
+    width: 100%;
+    border-radius: 100%;
+}
+
+/* Video Styling */
+.videoFrame {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Advice Container */
+.container {
+    background-color: #f9f9f9;
+    border-radius: 10%;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/* Buttons */
+.adviceBtn, .contactBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adviceBtn:hover, .contactBtn:hover {
+    background-color: #45a049;
+}
+
+/* Contact Form Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

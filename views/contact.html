@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="./static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -23,36 +24,50 @@
             <a href="fun.html">For fun</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" required></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
-        <table>
-            <tr>
-                <th>Contact Info</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>egencer@andrew.cmu.edu</td>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td>(412) 390-9463</td>
-            </tr>
-            <tr>
-                <td>LınkedIn</td>
-                <td><a href="https://www.linkedin.com/in/emre-gencer-021428265/">Emre Gencer</a></td>
-            </tr>
-            
-        </table>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Find Me</h2>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6072.562534411281!2d-79.94527152333853!3d40.44691127143475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2228a9adc75%3A0xfba25c169631ce3c!2s1000%20Morewood%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1742687641989!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </h2>
+        </div>
+        <div class="item2">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <table class="contactsTable">
+                <tr>
+                    <th>Contact Info</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>egencer@andrew.cmu.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>(412) 390-9463</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/emre-gencer-021428265/">Emre Gencer</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <footer>
         &copy; 2025 Emre Gencer. All rights reserved.

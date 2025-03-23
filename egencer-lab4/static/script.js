@@ -81,17 +81,13 @@ function addYear() {
     var d = new Date();
     var y = d.getFullYear();
     var E = document.getElementById("copyYear");
-    if (E) {
-        E.innerHTML += y;  // ✅ Only update if element exists
-    } else {
-        console.warn("Element with ID 'copyYear' not found.");
-    }
+    E.innerHTML+=y;
  } 
 
- //function showList() {
-    //document.getElementById("FavList").style.display = "block"; 
-    //document.getElementById("SeeMoreBTN").style.display = "none"; 
- //}
+ function showList() {
+    document.getElementById("FavList").style.display = "block"; 
+    document.getElementById("SeeMoreBTN").style.display = "none"; 
+ } 
 
 
  $("#readLess").click(function(){ 
@@ -116,17 +112,4 @@ function addYear() {
     if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
         msg.innerHTML = "Please fill out the form correctly so I can get back to you :)";
     }
- }
-
- function getAdvice() {
-    fetch('https://api.adviceslip.com/advice')
-    .then(response => response.json())
-        .then(data => {
-            const advice = data.slip.advice;
-            document.getElementById("adviceText").innerText = advice;
-        })
-        .catch(error => {
-            console.error("Error fetching advice:", error);
-            document.getElementById("adviceText").innerText = "Oops! Something went wrong.";
-        });
  }

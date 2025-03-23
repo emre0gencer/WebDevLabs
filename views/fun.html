@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="./static/script.js" defer></script>
+    <script src="../static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -23,14 +24,39 @@
             <a href="fun.html">For fun</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Things I love to do for fun</h2>
-        <ul>
-            <li>Playing basketball and following the Euroleague</li>
-            <li>Watching cinema</li>
-            <li>Exploring new coding projects</li>
-            <li>Video games like CS2 and FIFA</li>
-        </ul>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Favourite Pastime Activities</h2>
+            <ul>
+                <!--<button id="SeeMoreBTN" onclick="showList()">Click to see...</button>-->
+                <li>Basketball</li>
+                <li>Filmmaking</li>
+                <li>Movie Nights</li>
+                <li>Coding Projects</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img src="../static/funimage.jpg" alt="Photo Of Me ..." class="funIMG">
+        </div>
+        <div class="item3">
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/aCw6RYBvY38?si=eqWZLXuwnBxxsJHe" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+        <div class="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click for Advice!</p>
+                <button class="advice" onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
+
     </div>
     <footer>
         &copy; 2025 Emre Gencer. All rights reserved.
